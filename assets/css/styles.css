@@ -1,0 +1,59 @@
+:root {
+    --vermelho: #f1252e;
+    --preto: #020403;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--preto);
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+header .container h2 {
+    color: var(--vermelho);
+    font-family: 'Arial-Black';
+    font-size: 40px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+header .container nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header .container nav a:hover {
+    color: #fff;
+}
+
+.filme-principal {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .2)), url('/assets/images/game-of-thrones.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filme-principal--titulo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.filme-principal--sinopse {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
